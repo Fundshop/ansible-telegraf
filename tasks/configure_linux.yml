@@ -13,7 +13,7 @@
     - ansible_os_family == "FreeBSD"
 
 - name: Retrieve all ec2 tags on the instance
-  amazon.aws.ec2_tag_info:
+  ec2_tag:
     region: '{{ ansible_ec2_placement_region }}'
     resource: '{{ ansible_ec2_instance_id }}'
   when:
