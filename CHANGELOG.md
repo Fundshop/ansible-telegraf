@@ -2,7 +2,17 @@
 
 ## [Unreleased](https://github.com/dj-wasabi/ansible-telegraf/tree/HEAD)
 
-[Full Changelog](https://github.com/dj-wasabi/ansible-telegraf/compare/0.14.1...HEAD)
+[Full Changelog](https://github.com/dj-wasabi/ansible-telegraf/compare/0.14.2...HEAD)
+
+**Merged pull requests:**
+
+- Better sub inputs handling [\#193](https://github.com/dj-wasabi/ansible-telegraf/pull/193) ([lisuml](https://github.com/lisuml))
+- Bump ansible-core from 2.18.0 to 2.18.1 [\#192](https://github.com/dj-wasabi/ansible-telegraf/pull/192) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible-core from 2.16.8 to 2.18.0 [\#191](https://github.com/dj-wasabi/ansible-telegraf/pull/191) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [0.14.2](https://github.com/dj-wasabi/ansible-telegraf/tree/0.14.2) (2024-11-26)
+
+[Full Changelog](https://github.com/dj-wasabi/ansible-telegraf/compare/0.14.1...0.14.2)
 
 **Implemented enhancements:**
 
@@ -19,9 +29,15 @@
 - amazon.aws.ec2\_tag\_info [\#177](https://github.com/dj-wasabi/ansible-telegraf/issues/177)
 - Failing on Debian Bookwork, telegraf recomends stable main rather than specific release [\#175](https://github.com/dj-wasabi/ansible-telegraf/issues/175)
 - Unable to run against linux machines \(redhat\) [\#159](https://github.com/dj-wasabi/ansible-telegraf/issues/159)
+- How to add the sub inputs into the same config file using telegraf\_plugin\_extra  [\#149](https://github.com/dj-wasabi/ansible-telegraf/issues/149)
 
 **Merged pull requests:**
 
+- Updating the Python packages to make Molecule work [\#190](https://github.com/dj-wasabi/ansible-telegraf/pull/190) ([dj-wasabi](https://github.com/dj-wasabi))
+- fix: add missing tasks for RedHat distro \(rpm install\) [\#189](https://github.com/dj-wasabi/ansible-telegraf/pull/189) ([vfreitassentient](https://github.com/vfreitassentient))
+- Bump ansible-core from 2.15.9 to 2.17.6 [\#188](https://github.com/dj-wasabi/ansible-telegraf/pull/188) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Use `rhel` within yum url for almalinux  [\#187](https://github.com/dj-wasabi/ansible-telegraf/pull/187) ([kuhball](https://github.com/kuhball))
+- Add Archlinux OS [\#186](https://github.com/dj-wasabi/ansible-telegraf/pull/186) ([Frankkkkk](https://github.com/Frankkkkk))
 - Fixes Role for Almalinux 8.8, Closes \#172 [\#183](https://github.com/dj-wasabi/ansible-telegraf/pull/183) ([mira-miracoli](https://github.com/mira-miracoli))
 
 ## [0.14.1](https://github.com/dj-wasabi/ansible-telegraf/tree/0.14.1) (2024-02-17)
@@ -35,6 +51,7 @@
 **Fixed bugs:**
 
 - Fix molecule tests so that PR's can properly validated [\#180](https://github.com/dj-wasabi/ansible-telegraf/pull/180) ([dj-wasabi](https://github.com/dj-wasabi))
+- Replace apt\_key with get\_url [\#170](https://github.com/dj-wasabi/ansible-telegraf/pull/170) ([danclough](https://github.com/danclough))
 
 **Closed issues:**
 
@@ -45,7 +62,7 @@
 - Bump ansible-core from 2.15.2 to 2.15.9 [\#182](https://github.com/dj-wasabi/ansible-telegraf/pull/182) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible from 8.2.0 to 8.5.0 [\#181](https://github.com/dj-wasabi/ansible-telegraf/pull/181) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Change Debian repo location [\#179](https://github.com/dj-wasabi/ansible-telegraf/pull/179) ([danclough](https://github.com/danclough))
-- replace depracted aws module [\#178](https://github.com/dj-wasabi/ansible-telegraf/pull/178) ([ThorstenHeck](https://github.com/ThorstenHeck))
+- replace depracted aws module [\#178](https://github.com/dj-wasabi/ansible-telegraf/pull/178) ([daparm](https://github.com/daparm))
 - added yaml 1.2.2 compatibility [\#176](https://github.com/dj-wasabi/ansible-telegraf/pull/176) ([DEvil0000](https://github.com/DEvil0000))
 - Migrate from io to diskio to fix deprecation warning [\#173](https://github.com/dj-wasabi/ansible-telegraf/pull/173) ([mprasil](https://github.com/mprasil))
 
@@ -62,7 +79,6 @@
 **Fixed bugs:**
 
 - Don't install init script on SUSE/openSUSE systems running systemd [\#152](https://github.com/dj-wasabi/ansible-telegraf/issues/152)
-- Replace apt\_key with get\_url [\#170](https://github.com/dj-wasabi/ansible-telegraf/pull/170) ([danclough](https://github.com/danclough))
 - Fix the molecule run as part of CI process [\#166](https://github.com/dj-wasabi/ansible-telegraf/pull/166) ([dj-wasabi](https://github.com/dj-wasabi))
 - update influxdata GPG key after rotation [\#165](https://github.com/dj-wasabi/ansible-telegraf/pull/165) ([Tetha](https://github.com/Tetha))
 - Fixed issues with Windows paths containing spaces [\#162](https://github.com/dj-wasabi/ansible-telegraf/pull/162) ([KlettIT](https://github.com/KlettIT))
@@ -166,7 +182,6 @@
 - Some changes for fixing FreeBSD [\#101](https://github.com/dj-wasabi/ansible-telegraf/pull/101) ([dj-wasabi](https://github.com/dj-wasabi))
 - basic FreeBSD support [\#100](https://github.com/dj-wasabi/ansible-telegraf/pull/100) ([langerma](https://github.com/langerma))
 - Added the use\_proxy argument to use a proxy \(or not\) [\#98](https://github.com/dj-wasabi/ansible-telegraf/pull/98) ([dj-wasabi](https://github.com/dj-wasabi))
-- Various small changes for molecule [\#97](https://github.com/dj-wasabi/ansible-telegraf/pull/97) ([dj-wasabi](https://github.com/dj-wasabi))
 
 ## [0.12.0](https://github.com/dj-wasabi/ansible-telegraf/tree/0.12.0) (2019-03-12)
 
@@ -182,6 +197,7 @@
 
 **Merged pull requests:**
 
+- Various small changes for molecule [\#97](https://github.com/dj-wasabi/ansible-telegraf/pull/97) ([dj-wasabi](https://github.com/dj-wasabi))
 - Add processors section in Telegraf config [\#94](https://github.com/dj-wasabi/ansible-telegraf/pull/94) ([ph4r5h4d](https://github.com/ph4r5h4d))
 - Updated to Telegraf 1.10.0;Different installation methods [\#93](https://github.com/dj-wasabi/ansible-telegraf/pull/93) ([dj-wasabi](https://github.com/dj-wasabi))
 - Updating Telegraf default to 1.9.5 [\#92](https://github.com/dj-wasabi/ansible-telegraf/pull/92) ([sdurrheimer](https://github.com/sdurrheimer))
